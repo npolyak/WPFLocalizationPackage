@@ -14,7 +14,7 @@ Many years ago I used this package to localize a WPF application (it had to have
 
 The package allows switching the locales at run time and also allows localizing any Dependency or Attached properties – not only `strings`. It provides `Translate` markup extension that can be used from within XAML.
 
-In order to localize an application with the help of this package, you need to create XML catalogs for each of the locales you want your application to support. Here is an excerpt from such a catalog that comes with the demo that comes together with the source:
+In order to localize an application with the help of this package, you need to create XML catalogs for each of the locales you want your application to support. Here is an excerpt from such a catalog which is part of the demo that comes together with the source:
 
     <Dictionary EnglishName="English" 
                 CultureName="English" 
