@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dictionary EnglishName="Hebrew" CultureName="עברית" Culture="he-IL">
+	<Value Id="0" FlowDirection="RightToLeft" Title="חלון דוגמה" Width="560" Height="390" />
+	<Value Id="1" Content="זהו טקסט פשוט" />
+	<Value Id="2" Text="זה טקסט ערוך. לדוגמה, רוחב החלון הינו {0} וגובהו {1}" />
+	<Value Id="3" Text="פקד זה לוקח רוחב, גובה, צבע וכיוון שפה מהמילון" Width="460" Height="100" Background="Gray" />
+	<Value Id="4" Text="דרך נוספת להעברת Uid דינמי" />
+	<Value Id="5" Text="טקסט וצבע מתוך תבנית-נתונים עבור אובייקט מספר {0}" Foreground="Gold" />
+	<Value Id="6" Text="טקסט וצבע נוסף מתוך תבנית-נתונים עבור אובייקט מספר {0}" Foreground="DarkGray" />
+	<Value Id="7" Source="Images\English.jpg" />
+	<Value Id="8" Content="צא" />
+	<Value Id="9" Content="הצג שגיאה" />
+	<Value Id="NotEnoughMemory" Message="אין מספיק זכרון" />
+</Dictionary>

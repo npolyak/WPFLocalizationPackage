@@ -3,3 +3,7 @@
 ################################################################################
 
 /Localization/bin/Debug
+/Localization/obj/Debug
+/LocalizationDemo/bin/Debug
+/LocalizationDemo/obj/Debug
+/.vs/WPFLocalization/v16

@@ -1,0 +1,116 @@
+﻿<Window	x:Class="Tomers.WPF.Localization.MainWindow"
+		x:Name="Root"
+		xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+		xmlns:loc="http://schemas.tomer.com/winfx/2006/xaml/presentation"
+		xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:local="clr-namespace:Tomers.WPF.Localization"
+
+		WindowStyle="None"
+		AllowsTransparency="True"
+		Background="Transparent"
+		Foreground="{StaticResource ForegroundBrush}"
+
+		loc:Translate.Uid="0"
+	    
+		Title="{loc:Translate Title}"
+		Width="{loc:Translate 320}"
+		Height="{loc:Translate 300}"
+		FlowDirection="{loc:Translate LeftToRight}">
+
+	<Window.Resources>
+		<DataTemplate DataType="{x:Type local:Data}">
+			<TextBlock Margin="8" HorizontalAlignment="Left">
+				<TextBlock.Text>
+					<loc:Translate Default="Text 4">
+						<Binding Path="Uid" />
+						<Binding Path="ID" />
+					</loc:Translate>
+				</TextBlock.Text>
+				<TextBlock.Foreground>
+					<loc:Translate Default="Text 5">
+						<Binding Path="Uid" />
+					</loc:Translate>
+				</TextBlock.Foreground>
+			</TextBlock>
+		</DataTemplate>
+		
+		<Style x:Key="FlagButton" TargetType="{x:Type Button}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}">
+						<Border Style="{DynamicResource BorderStyle}"
+										Padding="4">
+							
+							<Image loc:Translate.Uid="7"
+								 Source="{loc:Translate Default=Images/Hebrew.jpg}"
+								 Height="24" />
+							
+						</Border>
+					</ControlTemplate>
+				</Setter.Value>
+			</Setter>
+			<Setter Property="HorizontalAlignment" Value="Left" />
+		</Style>
+		
+	</Window.Resources>
+
+	<Border Style="{DynamicResource BorderStyle}">
+		<StackPanel x:Name="_panel">
+			
+			<DockPanel>
+				<Button Style="{DynamicResource FlagButton}"
+								Margin="8"
+								DockPanel.Dock="Right"
+								Click="ButtonFlag_Click" />
+				<Label loc:Translate.Uid="1" Content="{loc:Translate Content 1}" FontSize="14" Foreground="{DynamicResource ForegroundBrush}" />
+			</DockPanel>			
+			
+			<TextBlock loc:Translate.Uid="2" FontSize="16">
+				<TextBlock.Text>
+					<loc:Translate Default="Text 1">
+						<Binding ElementName="Root" Path="Width" />
+						<Binding ElementName="Root" Path="Height" />
+					</loc:Translate>
+				</TextBlock.Text>
+			</TextBlock>
+			
+			<TextBlock loc:Translate.Uid="3"
+				Text="{loc:Translate Default=Text 2}"
+				Background="{loc:Translate AliceBlue}"
+				Width="{loc:Translate 300}"
+				Height="{loc:Translate 30}" FontSize="18" />
+
+			<TextBlock FontSize="18">
+				<TextBlock.Text>
+					<loc:Translate Default="Text 3">
+						<Binding ElementName="Root" Path="Uid" />
+					</loc:Translate>
+				</TextBlock.Text>
+			</TextBlock>	
+			
+			<ContentControl x:Name="_elementI" FontSize="20" />
+			<ContentControl x:Name="_elementII" FontSize="20" />
+
+			<DockPanel LastChildFill="False">							
+				
+				<Button loc:Translate.Uid="8"
+								DockPanel.Dock="Right"
+								Foreground="{DynamicResource ForegroundBrush}"
+								Margin="8"
+								HorizontalAlignment="Center"
+								Content="{loc:Translate Content 3}"
+								Click="ButtonClose_Click"/>
+				
+				<Button loc:Translate.Uid="9"
+								DockPanel.Dock="Right"
+								Foreground="{DynamicResource ForegroundBrush}"
+								Margin="8"
+								HorizontalAlignment="Center"
+								Content="{loc:Translate Content 2}"
+								Click="ButtonError_Click"/>
+				
+			</DockPanel>
+		
+		</StackPanel>
+	</Border>
+</Window>

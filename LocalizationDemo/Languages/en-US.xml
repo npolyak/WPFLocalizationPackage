@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Dictionary EnglishName="English" CultureName="English" Culture="en-US">
+	<Value Id="0" FlowDirection="LeftToRight" Title="Demo Window" Width="700" Height="340" />
+	<Value Id="1" Content="This is a simple text" />
+	<Value Id="2" Text="This is a formatted text. For example, the width of this window is {0}, and its height is {1}" />
+	<Value Id="3" Text="This control takes width, height, color and flow direction from the dictionary" Width="650" Height="50" Background="DarkGray" />
+	<Value Id="4" Text="Another way to pass a dynamic Uid" />
+	<Value Id="5" Text="Text and color within a Data Template for instance {0}" Foreground="Silver" />
+	<Value Id="6" Text="Different text and different color within a Data Template for instance {0}" Foreground="Gold" />
+	<Value Id="7" Source="Images\Hebrew.jpg" />
+	<Value Id="8" Content="Exit" />
+	<Value Id="9" Content="Show Error" />
+	<Value Id="NotEnoughMemory" Message="There is not enough memory" />
+</Dictionary>
