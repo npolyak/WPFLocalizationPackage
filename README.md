@@ -1,7 +1,7 @@
 # WPFLocalizationPackage
 A great (perhaps the best) WPF localization and theming package from [Tomer Shamam](https://www.linkedin.com/in/tomershamam/?originalSubdomain=il).
 
-The original source code link is no longer available, but I got this code from [Tomer](https://www.linkedin.com/in/tomershamam/?originalSubdomain=il) and publish it with his kind permission. 
+The original source code link is no longer available, but I got this code from [Tomer](https://www.linkedin.com/in/tomershamam/?originalSubdomain=il) and published it with his kind permission. 
 
 The images below show switching the locale between English and Hebrew (this demo is part of the code)
 
